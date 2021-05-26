@@ -33,3 +33,22 @@ var subject2 = new Subject ("cse 302", 18, ["basic", "graph", "analysis"],"This 
 var subject3 = new Subject ("cse 105", 21, ["root", "program making", "mathmatical"],"Are you ready for next?");
 
 subject1.display();
+
+//constructor second example
+
+var People = function(name, age, weight){
+    this.naam = name;
+    this.boyosh = age ; 
+    this.ozon = weight;
+    this.display = function()
+    {
+        console.log(this.naam);
+        console.log(this.boyosh);
+        console.log(this.ozon);
+    }
+}
+
+let people1 = new People("Hridoy", 27, 70);
+let people2 = new People("Mesbah", 26, 60);
+people1.display();
+people2.display();
