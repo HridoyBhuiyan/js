@@ -1,0 +1,9 @@
+.primary--bg{
+    background-color: black;
+    height: 200px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3px;
+}
