@@ -1,23 +1,35 @@
-var myArray = ["hridoy", "etu", "uday"];
-myArray.unshift("noor Udding");
-console.log (myArray);
-myArray.splice(3, 0,"Fahmida", "Alamin");
-console.log(myArray);
-myArray.splice(4,2);
-console.log(myArray);
-
-let nextArray = ["Noor", "Hridoy", "Fahmida", "Etu"];
-nextArray.sort();
-nextArray.reverse();
-console.log(nextArray);
-
-let number = [4, 5, 10, 1, 9, 7, 8];
-number.sort(
-    function(a, b)
+//object
+var subject = {
+    name : "CSE 101",
+    topicNumber : 20,
+    topics : ["fundamental", "advance", "medium"],
+    announc : function ()
     {
-        return a -b;
+        console.log("hello, you are here to learning the CSE 101")
     }
-)
-console.log(number);
-let newNumb = number.reverse();
-console.log(newNumb);
+}
+
+console.log(subject.name);
+//constructor
+
+var Subject = function (subName, subTopicNumber, subTopics, subAnnounce)
+{
+    this.subName=subName;
+    this.subTopicNumber = subTopicNumber;
+    this.subTopics = subTopics;
+    this.subAnnounce = subAnnounce;
+
+    this.display = function ()
+    {
+        console.log(this.subName);
+        console.log(this.subTopicNumber);
+        console.log(this.subTopics);
+        console.log(this.subAnnounce);
+    }
+}
+
+var subject1 = new Subject ("cse 102", 19, ["fundamental", "coding", "mathmatical"],"Be attentive with your lesson");
+var subject2 = new Subject ("cse 302", 18, ["basic", "graph", "analysis"],"This is the way of CSE 302");
+var subject3 = new Subject ("cse 105", 21, ["root", "program making", "mathmatical"],"Are you ready for next?");
+
+subject1.display();
