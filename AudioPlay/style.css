@@ -1,0 +1,14 @@
+.myButton{
+    width: 100px;
+    background-color: aqua;
+    border:1px black solid;
+    height: 50px;
+    border-radius: 15%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(85, 85, 85);
+}
+.anim {
+    box-shadow: 0 15px 18px 0 tomato;
+    opacity: 0.5;
+}
