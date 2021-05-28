@@ -52,3 +52,23 @@ let people1 = new People("Hridoy", 27, 70);
 let people2 = new People("Mesbah", 26, 60);
 people1.display();
 people2.display();
+
+
+// adding method in objects out of objects
+
+var test = {
+    subject: "bangla",
+    testAnnoucment : function()
+    {
+        console.log("be attentive on exam");
+    }
+}
+
+test.testAnnoucment();
+
+test.nextAnnouncment = function()
+{
+    console.log("Failed people will not allowed");
+}
+
+test.nextAnnouncment()

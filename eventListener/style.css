@@ -1,0 +1,25 @@
+.text--style{
+    color:blue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.div--style {
+    background-color: green;
+    color: red;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.btn--list{
+    background-color: rgb(206, 206, 206);
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+.btn--list > button {
+    width: 80px;
+}
+.btn--list p{
+    font-size: 20px;
+}
