@@ -9,8 +9,6 @@ for (var i = 0; i <3; i++) {
 }
 
 
-
-
 var audioPlay = function (text)
 {
     switch (text) 
