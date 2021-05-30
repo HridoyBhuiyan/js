@@ -5,8 +5,29 @@ for (var i = 0; i <3; i++) {
     console.log(text);
     playAnimation(text)
     audioPlay(text);
+    pressedKey(text);
 });
 }
+
+
+var playAnimation = function(text)
+{
+    var selectedButton = document.querySelector("."+text);
+    selectedButton.classList.add("anim");
+    setTimeout(function(){
+        selectedButton.classList.remove("anim");
+    }, 1500)
+}
+
+
+
+document.addEventListener("keypress", function(event)
+{
+    var text = event.key;
+    audioPlay(text);
+    playAnimation(text)
+});
+
 
 
 var audioPlay = function (text)
@@ -29,14 +50,3 @@ var audioPlay = function (text)
         } 
 };
 
-
-
-
-var playAnimation = function(text)
-{
-    var selectedButton = document.querySelector("."+text);
-    selectedButton.classList.add("anim");
-    setTimeout(function(){
-        selectedButton.classList.remove("anim");
-    }, 1500)
-}
