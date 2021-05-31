@@ -1,17 +1,6 @@
-// var sakib = 
-// {
-//     name: "Sakib Al Hasan",
-//     display : function(){
-//         console.log(this.name);
-//     },
-//     father : {
-//         name: "MR. XXX", 
-//         display: function(){
-//             console.log(this.name);
-//         }
-//     }
-// }
+var thisfun= function() {
 
-// sakib.display()
-// sakib.father.display()
+let a = document.getElementById("myinpu").value;
+document.getElementById("myp").innerHTML = a;
 
+}
